@@ -26,22 +26,65 @@ def limpar_texto(texto):
     
     return texto
 
+# faz a interface inicial para melhor experiencia do usuario
+def interface():
+    print("==============================================")
+    print("       BEM-VINDO AO HELPJOB  ")
+    print("==============================================\n")
+
+    print("O Helpjob é um assistente inteligente criado para ajudar você a entender o futuro do trabalho!")
+    print("Nosso sistema analisa o seu emprego e informa o nível de risco de automatização —")
+    print("ou seja, se ele tem mais chances de ser substituído por tecnologias no futuro.\n")
+
+    print("Além disso, o Helpjob também recomenda profissões promissoras, explica o que cada uma faz,")
+    print("quanto tempo dura o curso e quais são as principais habilidades exigidas.\n")
+
+    emprego = input("Vamos começar? Digite o nome da sua profissão para descobrir o seu índice de automatização!:")
+    principal(emprego)
+
+    
+    
+
+
+
+
+
+
 
 # descreve os empregos do futuro
 def descricao_emprego(nome):
     if nome == 1:
-        print("\n-O Cientista de Dados é o profissional responsável por coletar, organizar e analisar grandes volumes de informações para ajudar empresas a tomar decisões inteligentes. Ele usa linguagens como Python, R e SQL, além de ferramentas como Power BI e Tableau, para criar modelos de previsão e identificar padrões que orientam estratégias de negócio.\n-Normalmente, forma-se em Ciência de Dados, Estatística, Engenharia da Computação ou áreas semelhantes, com cursos que duram em média 4 anos, embora existam formações mais curtas, como especializações e bootcamps de 6 meses a 2 anos.\n-É uma das carreiras mais promissoras do futuro, com forte demanda no mercado global e salários que podem ultrapassar R$ 25.000 para profissionais experientes.")
+        print("\n-O Cientista de Dados é o profissional responsável por coletar, organizar e analisar grandes volumes de informações para ajudar empresas a tomar decisões inteligentes. Ele usa linguagens como Python, R e SQL, além de ferramentas como Power BI e Tableau, para criar modelos de previsão e identificar padrões que orientam estratégias de negócio.\n\n-Normalmente, forma-se em Ciência de Dados, Estatística, Engenharia da Computação ou áreas semelhantes, com cursos que duram em média 4 anos, embora existam formações mais curtas, como especializações e bootcamps de 6 meses a 2 anos.\n\n-É uma das carreiras mais promissoras do futuro, com forte demanda no mercado global e salários que podem ultrapassar R$ 25.000 para profissionais experientes.")
     
     elif nome == 2:
-        print("\n-O Engenheiro de Software projeta, desenvolve e mantém sistemas e aplicativos. Ele transforma ideias em programas, define tecnologias e garante segurança e eficiência.\n-Geralmente faz graduação de 4 a 5 anos em Engenharia de Software ou áreas de TI. Usa linguagens como Python, Java e JavaScript, além de trabalhar com bancos de dados, nuvem e controle de versões.\n-É uma carreira altamente valorizada e com grande demanda, com salários que podem ultrapassar R$ 25.000 para profissionais experientes.")
+        print("\n-O Engenheiro de Software projeta, desenvolve e mantém sistemas e aplicativos. Ele transforma ideias em programas, define tecnologias e garante segurança e eficiência.\n\n-Geralmente faz graduação de 4 a 5 anos em Engenharia de Software ou áreas de TI. Usa linguagens como Python, Java e JavaScript, além de trabalhar com bancos de dados, nuvem e controle de versões.\n\n-É uma carreira altamente valorizada e com grande demanda, com salários que podem ultrapassar R$ 25.000 para profissionais experientes.")
 
     elif nome == 3:
-        print("\n-O Especialista em Cibersegurança protege sistemas, redes e dados contra ataques e invasões digitais. Ele identifica vulnerabilidades, cria barreiras de proteção e responde a incidentes de segurança.\n-A formação costuma ser em Segurança da Informação, Ciência da Computação ou Engenharia de Software, com duração média de 4 anos.Esse profissional domina redes, criptografia, firewalls, testes de invasão e normas de segurança.\n-É uma das carreiras mais promissoras do futuro, com alta demanda global e salários que podem chegar a R$ 30.000 em cargos sêniores.")
+        print("\n-O Especialista em Cibersegurança protege sistemas, redes e dados contra ataques e invasões digitais. Ele identifica vulnerabilidades, cria barreiras de proteção e responde a incidentes de segurança.\n\n-A formação costuma ser em Segurança da Informação, Ciência da Computação ou Engenharia de Software, com duração média de 4 anos.Esse profissional domina redes, criptografia, firewalls, testes de invasão e normas de segurança.\n\n-É uma das carreiras mais promissoras do futuro, com alta demanda global e salários que podem chegar a R$ 30.000 em cargos sêniores.")
     
     elif nome == 4:
-        print("\n-O Arquiteto de Nuvem é o profissional responsável por planejar, criar e gerenciar estruturas de computação em nuvem, como AWS, Azure e Google Cloud. Ele garante que os sistemas sejam escaláveis, seguros e econômicos.\n-A formação costuma ser em Engenharia de Software, Ciência da Computação ou Sistemas de Informação, com duração média de 4 a 5 anos.\n-Domina tecnologias de servidores virtuais, containers, segurança em nuvem e automação. É uma das profissões mais valorizadas do setor de tecnologia, com salários que podem ultrapassar R$ 28.000 para especialistas experientes.")
+        print("\n-O Arquiteto de Nuvem é o profissional responsável por planejar, criar e gerenciar estruturas de computação em nuvem, como AWS, Azure e Google Cloud. Ele garante que os sistemas sejam escaláveis, seguros e econômicos.\n\n-A formação costuma ser em Engenharia de Software, Ciência da Computação ou Sistemas de Informação, com duração média de 4 a 5 anos.\n\n-Domina tecnologias de servidores virtuais, containers, segurança em nuvem e automação. É uma das profissões mais valorizadas do setor de tecnologia, com salários que podem ultrapassar R$ 28.000 para especialistas experientes.")
+
+    elif nome == 5:
+        print("\n-O Engenheiro de Automação desenvolve e mantém sistemas automatizados que controlam máquinas, processos industriais e robôs. Ele combina conhecimentos de mecânica, eletrônica, programação e controle para tornar a produção mais eficiente e segura.\n\n-O curso de Engenharia de Automação ou Mecatrônica dura em média 5 anos.Esse profissional domina PLC, sensores, robótica, IA industrial e Internet das Coisas (IoT).\n\n-É uma profissão com grande futuro, especialmente na Indústria 4.0, com salários que podem chegar a R$ 20.000 em cargos sêniores.")
+
+    elif nome == 6:
+        print("\n-O Engenheiro Ambiental atua na preservação do meio ambiente e na busca por soluções sustentáveis para indústrias, cidades e empresas. Ele trabalha com tratamento de água e resíduos, controle de poluição e energia limpa.\n\n-O curso de Engenharia Ambiental dura em média 5 anos.Esse profissional precisa entender de ecologia, química, geoprocessamento e legislação ambiental.\n\n-É uma carreira essencial para o futuro sustentável, com salários que podem variar de R$ 6.000 a R$ 18.000, dependendo da experiência e do setor.")
+    
+    elif nome == 7:
+        print("\n-O Profissional de Telemedicina usa tecnologia para realizar consultas, diagnósticos e acompanhamentos médicos a distância. Ele combina conhecimentos da área da saúde e de tecnologia para oferecer atendimento remoto eficiente e seguro.\n\n-A formação varia conforme a especialidade — geralmente é preciso ser médico, enfermeiro ou técnico em enfermagem, com graduação de 4 a 6 anos.Esse profissional precisa dominar plataformas digitais, ética médica online e segurança de dados.\n\n-A telemedicina é uma área em rápida expansão, com salários que podem ultrapassar R$ 25.000 para médicos especialistas.")
+
+    elif nome == 8:
+        print("\n-O Engenheiro Biomédico une tecnologia e saúde para desenvolver equipamentos médicos, próteses, softwares hospitalares e sistemas de monitoramento. Ele trabalha em hospitais, laboratórios e empresas de tecnologia médica.\n\n-O curso de Engenharia Biomédica tem duração média de 5 anos.Esse profissional precisa dominar eletrônica, biologia, programação, instrumentação e inteligência artificial aplicada à saúde.\n\n-É uma profissão em crescimento, com alta demanda no setor de tecnologia médica, e salários que podem chegar a R$ 20.000 para especialistas.")
+
+    elif nome == 9:
+        print("\n-O Gestor de Inovação e Startups é o profissional que lidera projetos de novas ideias, produtos e negócios tecnológicos. Ele atua em empresas, incubadoras ou criando a própria startup, conectando tecnologia, mercado e estratégia.\n\n-Normalmente tem formação em Administração, Engenharia, Tecnologia da Informação ou Empreendedorismo, com duração média de 4 anos.Precisa dominar modelos de negócio, marketing digital, gestão de equipes e captação de investimentos.\n\n-É uma carreira dinâmica e criativa, com alta demanda no ecossistema de inovação e salários que podem ultrapassar R$ 18.000 em posições de liderança.")
+
+    elif nome == 10:
+        print("\n-O Analista de Dados de Mercado coleta e interpreta informações sobre tendências de consumo, comportamento do público e desempenho de produtos. Ele transforma dados em insights que ajudam empresas a tomar decisões estratégicas.\n\n-A formação costuma ser em Administração, Marketing, Estatística ou Ciência de Dados, com duração média de 4 anos.Esse profissional domina análise estatística, planilhas, Power BI, SQL e Python.\n\n-É uma profissão em alta demanda, essencial para empresas que baseiam decisões em dados, com salários que podem chegar a R$ 15.000 em cargos sêniores.")
     
 
+# oferece a ajuda necessaria para as pessoas em relação a empregabilidade no futuro
 def ajuda():
     lista = []
     empregosF = ["Cientista de Dados","Engenheiro de Software","Especialista em Cibersegurança","Arquiteto de Nuvem","Engenheiro de Automação","Engenheiro Ambiental","Profissional de Telemedicina","Engenheiro Biomédico","Gestor de Inovação e Startups","Analista de Dados de Mercado"]
@@ -57,19 +100,29 @@ def ajuda():
                 
                 
                 
-                if resposta in range(1,10):
-                    
+                if resposta in range(1,11):
                     descricao_emprego(resposta)
 
-                    salvar = input("\nVocê quer ver outro e salvar esse em uma lista? (sim/não):")
-                    salvar = limpar_texto(salvar)
-                    if salvar == "sim":
-                        lista.append(empregosF[resposta-1])
-                        print("Salvo com sucesso!")
-                    else:
-                        print("Ok, muito obrigado!")
-                        print(f"Sua lista de empregos que você se interessou ficou assim {lista}. Espero ter te ajudado com esse problema atual que afeta alguns empregos. Até mais!!")
-                        break
+                    while True:
+                    
+                        
+
+                        salvar = input("\nVocê deseja salvar esse emprego em uma lista de interesses? (sim/não):")
+                        salvar = limpar_texto(salvar)
+                        if salvar == "sim":
+                            lista.append(empregosF[resposta-1])
+                            print("Salvo com sucesso!")
+                            break
+                        
+                        elif salvar == "nao":
+                            print("Ok!, se tiver interesse em mais algum é so falar.")
+                            break
+                        
+                        
+                        else:
+                            print("Resposta não encontrada, digite novamente...")
+                        
+                        
 
                                 
                 elif resposta == 0:
@@ -84,6 +137,9 @@ def ajuda():
 
 # analisa o indice de atumatização do emprego
 def principal(emprego):
+    
+    
+
     empregosA = ["Assistente administrativo","Secretário","Secretária","Digitador","Digitadora","Operador de call center","Recepcionista","Agente de telemarketing","Operador de linha de montagem","Inspetor de qualidade","Embalador industrial","Trabalhador fabril","Caixa de banco", "Assistente de contabilidade","Analista de crédito básico","Atendente de loja","Operador de caixa","Repositor de prateleira","Motorista de caminhão","Motoboy","Entregador","Operador de empilhadeira","Faxineiro industrial","Zelador","Trabalhador de manutenção básica","Operador de SAC","Agente de suporte técnico básico","Vendedor por telefone"]
 
     empregosM = ["Técnico em informática","Técnico em administração","Técnico em contabilidade","Técnico em logística","Técnico em recursos humanos","Técnico em enfermagem","Técnico em segurança do trabalho","Auxiliar de laboratório","Auxiliar de produção","Auxiliar de almoxarifado","Assistente de vendas","Assistente de marketing","Auxiliar de escritório","Operador de máquinas","Operador de CNC","Motorista profissional","Eletricista industrial","Mecânico de manutenção","Soldador","Técnico em eletrônica","Técnico em mecatrônica","Técnico em edificações","Técnico em telecomunicações","Agente de viagens","Corretor de imóveis","Supervisor de equipe","Despachante","Agente de segurança patrimonial","Técnico em redes de computadores","Técnico em química"]
@@ -99,31 +155,23 @@ def principal(emprego):
     
     
     if emprego in empregosA:
-        print("\nchance de automatizão ALTA!")
-        print("-Mas não se preocupe, aqui estão os principais 10 empregos bons para o futuro.")
+        print("\nA chance de automatizão do seu emprego é ALTA!")
+        print("Mas não se preocupe, separei para você os melhores 10 empregos para o futuro.")
         ajuda()
         
         
     elif emprego in empregosM:
-        print("\nChance de automatizão MEDIA")
-        print("você está no meio, então é bom tomar cuidado, aqui estão os principais 10 empregos bons para o futuro. ")
+        print("\nA chance de automatizão do seu emprego é MÉDIA!")
+        print("Você está no meio, então é bom tomar cuidado, por isso separei para você os melhores 10 empregos para o futuro. ")
         ajuda()
     
     else:
-        print("\nChance de automatizão BAIXA")                   
+        print("\nA chance de automatizão do seu emprego é BAIXA!")
+        print("Isso é uma otima notícia!!, mas separei os 10 melhores empregos do futuro para você, se tiver interesse.") 
+        ajuda()                  
                                             
 
         
+interface()
 
 
-   
-                    
-
-
-
-        
-
-
-
-job = input("digite seu emprego:")
-principal(job)
